@@ -1,4 +1,4 @@
 {
 	"require":"infra.php",
-	"js":"domready.js"
+	"js":"ready.min.js"
 }
