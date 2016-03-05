@@ -9,5 +9,5 @@ Event::handler('layer.onshow', function ($layer) use (&$domready){
 	if (empty($layer['domready'])) return;
 	if ($domready) return;
 	$domready = true;
-	View::head('<script>'.Load::loadTEXT('-domready/domready.js').'</script>');
+	View::head('<script>'.Load::loadTEXT('-domready/ready.min.js').'</script>');
 });
