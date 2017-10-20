@@ -1,4 +1,3 @@
 {
-	"require":"infra.php",
-	"js":"ready.min.js"
+	"require":"infra.php"
 }
