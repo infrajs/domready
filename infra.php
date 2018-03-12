@@ -8,6 +8,7 @@ use infrajs\controller\Layer;
 
 Event::handler('Layer.onshow', function ($layer) {
 	if (!Layer::pop($layer, 'domready')) return;
-	if (Once::omit(__FILE__)) return;
-	View::head('<script>'.Load::loadTEXT('-domready/ready.min.js').'</script>');
+	Once::func( function(){
+		View::head('<script>'.Load::loadTEXT('-domready/ready.min.js').'</script>');
+	});
 });
